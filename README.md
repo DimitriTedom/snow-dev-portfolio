@@ -158,6 +158,6 @@ Distributed under the MIT License. See [LICENSE](LICENSE) for more information.
 
 ## 📞 Contact
 
-- **Website:** [https://trionn.com](https://trionn.com)
+- **Website:** [https://snow-dev-portfolio-mu.vercel.app/](https://snow-dev-portfolio-mu.vercel.app/)
 - **Email:** dimitritedom@gmail.com
 - **GitHub:** [DimitriTedom](https://github.com/DimitriTedom)
