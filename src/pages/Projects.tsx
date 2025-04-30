@@ -12,6 +12,21 @@ import { Link } from "react-router-dom";
 export const projectsData = [
   {
     id: 1,
+    title: "THE ULTIMATE CANVA PRO COURSE",
+    description: "THE ULTIMATE CANVA PRO COURSE is a comprehensive online educational program I created, produced, and marketed from scratch. This extensive course features over 20 hours of meticulously crafted video content spanning 15 distinct projects that take students from complete beginners to confident designers. The curriculum covers essential design categories including logo creation, thumbnail design, marketing materials, business collateral, and even advanced video and animation production—all within the Canva Pro ecosystem. What sets this course apart is its dual-track approach, with each section teaching techniques both with and without AI assistance, preparing students for both traditional design workflows and emerging AI-enhanced design processes.",
+    challenge: "Creating a professional-quality online course presented multiple significant challenges. First, I needed to develop a curriculum structure that could effectively accommodate absolute beginners while providing sufficient depth to achieve advanced skills. Second, producing over 20 hours of engaging, high-quality video content required mastering not just design techniques but also video production, lighting, audio engineering, and educational delivery methods. Third, I had to constantly balance teaching fundamental design principles while showcasing Canva Pro's specific features in an accessible way. Perhaps most challenging was the need to incorporate emerging AI design tools alongside traditional methods, requiring me to stay at the cutting edge of rapidly evolving technology while maintaining educational clarity.",
+    solution: "I developed a modular course structure that progresses logically from fundamentals to advanced applications, with each of the 15 projects building upon previously learned skills. For content production, I established a professional recording setup with proper lighting, sound treatment, and screen capture technology to ensure consistent quality across all 20+ hours of instruction. The dual-track approach to teaching both AI-assisted and traditional design methods was implemented through parallel lesson structures, allowing students to understand the underlying principles before seeing how AI can enhance their workflow. I created comprehensive supplementary materials including downloadable templates, checklists, and resource guides to support different learning styles.",
+    result: "THE ULTIMATE CANVA PRO COURSE has successfully transformed complete beginners into capable designers, with students reporting significant improvements in both their technical skills and creative confidence. The course has received overwhelmingly positive feedback, particularly for its comprehensive scope and the unique dual approach to traditional and AI-assisted design techniques. Many students have leveraged their new skills to launch design side-businesses, enhance their existing professional roles, or improve their personal projects. The course has established me as an authority in design education and created a sustainable revenue stream through ongoing sales. The framework I developed for teaching both traditional and AI-enhanced design processes has positioned the course to remain relevant even as design technology continues to evolve.",
+    category: "Product Design",
+    tags: ["Canva Pro", "Online Course", "Design Education", "AI Design", "Video Production"],
+    image: "/CanvaProCourse_Thumbnail.png",
+    image2: "/CanvaProCourse_Projects.png",
+    image3: "/CanvaProCourse_Students.png",
+    date: "Feb 10, 2024",
+    url: "https://www.ultimatecanvaprocourse.com",
+  },
+  {
+    id: 2,
     title: "ChezFlora UI/UX Design",
     description: "A comprehensive design system created for ChezFlora e-commerce platform developed over an intensive 5-day period. This project involved the creation of a complete design ecosystem from scratch, including responsive components using auto layout, a systematic color and typography system with variables, and interactive prototypes. The design file spans over 8 meticulously organized pages that serve as a comprehensive blueprint for the development team, ensuring consistent implementation and seamless user experience across the platform.",
     challenge: "The primary challenge was creating a comprehensive design system from scratch within a tight 5-day timeline while ensuring it would be easily implementable by the development team. I needed to balance aesthetic considerations with technical feasibility, ensuring components were both visually appealing and structurally sound from an engineering perspective. Additionally, the design needed to accommodate a complex e-commerce flow with multiple user journeys while maintaining visual consistency and accessibility standards. Creating a system that could scale with the product while providing immediate value to developers required careful planning and execution.",
@@ -43,7 +58,7 @@ export const projectsData = [
   {
     id: 3,
     title: "ChezFlora E-commerce Web App",
-    description: "This is a 1 month project realised in ConCour conditions. This project required a deep understanding of user needs\n" +
+    description: "This is a project 1 month project realised in ConCour conditions. This project required a deep understanding of user needs\n" +
         "and business objectives in the specification docs they provide us with, to create a solution that is both functional and \n" +
         "visually appealing. The final outcome successfully addressed the client's \n" +
         "requirements as specified in the specification document while providing an exceptional user experience.",
@@ -56,7 +71,7 @@ export const projectsData = [
         "throughout the application, with special attention to accessibility and\n" +
         "responsive behavior across various devices.",
     result: "The project was very well received by the jury, resulting in improved engagement metrics and positive feedback. Key performance indicators showed a significant\n"+
-    "improvement in user retention and task completion rates compared to that of other participats, and i that makes me the 1st price Winner. Use this email: dimitritedom@gmail.com and password: klanoshi5 to connect to the app as admin",
+    "improvement in user retention and task completion rates compared to that of other participats, and i that makes me the 1st price Winner.",
     category: "Web Apps",
     tags: ["MERN", "Tailwind CSS", "Redux Toolkit","Typescript"],
     image: "/ChezFlora_Thumbnail.png",
@@ -82,18 +97,17 @@ export const projectsData = [
   },
   {
     id: 5,
-    title: "Some Other Designs",
-    description: "This project will direct you to a google drive folder containing all the designs I have done for clients. I will be adding more designs as I go along.😉️",
-    challenge: "///",
-    solution: "///",
-    result: "Take a look and get me back !😎️",
-    category: "Product Design",
-    tags: ["CanvaPro", "client"],
-    image: "/JuniorCanal.png",
-    image2: "/FylerEsthétique.png",
-    image3: "/JuniorCanal.png",
-    date: "Jan 15, 2023 - Now",
-    url: "https://drive.google.com/drive/folders/1nxbA6pBJgFooAXlTXaZ1sgeO-tcnZQ1s?usp=sharing",
+    title: "Meta Showroom",
+    description: "Virtual reality showroom for interior design",
+    challenge: "Trading platform dashboard with real-time data visualization",
+    solution: "Trading platform dashboard with real-time data visualization",
+    result: "Trading platform dashboard with real-time data visualization",    category: "Product Design",
+    tags: ["Unity", "React", "ThreeJS"],
+    image: "https://source.unsplash.com/random/800x600/?vr",
+    image2: "https://source.unsplash.com/random/800x600/?interior",
+    image3: "https://source.unsplash.com/random/800x600/?design",
+    date: "Dec 15, 2022",
+    url: "https://example.com/metashowroom",
   },
   {
     id: 6,
@@ -104,15 +118,15 @@ export const projectsData = [
     result: "Snow Brain AI has achieved exceptional user satisfaction with response times averaging under 1 second while maintaining high-quality interactions. The application successfully processes over 10,000 daily queries with a 92% satisfaction rate based on user feedback demonstrating strong market validation for AI-powered conversational interfaces.",
     category: "Web Apps",
     tags: ["React.Js", "Gemini-1.5-flash", "LLMs Automation","Typescript","front-end"],
-    image: "/Snow-Brain-ai-preview.png",
+    image: "https://snow-brain-ai.netlify.app/Snow-Brain-ai-preview.png",
     image2: "https://snow-brain-ai.netlify.app/Snow-Brain-AI.png",
-    image3: "/Snow-Brain-ai-preview.png",
+    image3: "https://snow-brain-ai.netlify.app/Snow-Brain-ai-preview.png",
     date: "Sept 12, 2024",
     url: "https://snow-brain-ai.netlify.app/",
   },
   {
     id: 7,
-    title: "Front-end Portfolio for a Client",
+    title: " Front-end Portfolio for a Client",
     description: "A fully responsive front-end portfolio website developed in React within an extremely tight timeline of just 2 days. This project showcases the client's work, skills, and contact information through a modern, clean interface designed for optimal user experience across all devices. The site features smooth animations, an interactive project gallery, and a functional contact form with email integration.",
     challenge: "The primary challenge was delivering a complete, polished portfolio website in just 48 hours while meeting all client requirements. The project demanded rapid design decisions, efficient coding practices, and seamless implementation of responsive layouts. Additionally, integrating a reliable contact form system with email functionality without backend infrastructure required creative solutions within the limited timeframe.",
     solution: "I leveraged React's component-based architecture to rapidly build reusable UI elements and implemented responsive design principles using modern CSS techniques. For the contact functionality, I integrated EmailJS to handle form submissions directly from the frontend, eliminating the need for a custom backend. The development process was streamlined by focusing on core features first and utilizing efficient state management for interactive elements.",
