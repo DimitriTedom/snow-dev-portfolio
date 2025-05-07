@@ -63,8 +63,8 @@ const About = () => {
   ];
 
   // Direct download links for CVs
-  const developerCvUrl = "https://drive.google.com/file/d/1UuS0huUVmYe2kgum93MKe3IXdzPgsYs0/view?usp=sharing";
-  const designerCvUrl = "https://drive.google.com/file/d/15gfF_pJ3x7qRFri2Dk3ypIb_kyEXvSrX/view?usp=sharing";
+  const developerCvUrl = "https://drive.google.com/file/d/1jNOJV9wvaY-bsVfgdjKy0c03vGJ2G-hP/view?usp=sharing";
+  const designerCvUrl = "https://drive.google.com/file/d/1nvFdAwskcbf8G1SLqhROOX2Rr_3TWa7-/view?usp=drive_link";
 
   // Convert Google Drive view links to direct download links
   const getDirectDownloadLink = (driveLink: string) => {
