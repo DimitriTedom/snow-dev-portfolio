@@ -65,8 +65,28 @@ export const projectsData = [
     date: "april 20, 2025",
     url: "https://chez-flora-sigma.vercel.app/",
   },
-  {
+    {
     id: 4,
+    title: "AI SnowPrompt builder",
+    description: "Discover, generate, and share AI‑powered prompts with ai‑suggested tags.",
+    challenge: "The main challenge was to design, code and deploy my first NEXTJS Project. A system that could handle CRUD data operations \n" +
+        " while maintaining an intuitive and clean interface. Users needed to quickly\n" +
+        "access information without feeling overwhelmed by the complexity of the\n" +
+        "underlying structure, and of course, the prompts can be either suggested by Humman or Generated with AI",
+    solution: "E-commerce platform with Google authentication with NEXTAUTHJS. I developed a strategic approach that included API communicaiton with LLAMA-3-VERSATILE through GROQ API" +
+        "then user can perform CRUD Operations on the returned prompts, with special attention to accessibility and\n" +
+        "responsive behavior across various devices.",
+    result: "The project was very well appreciated by LinkedIn, whatsapp community Members and becoming more and more popular",
+    category: "Web Apps",
+    tags: ["MERN", "Tailwind CSS", "NEXTJS","JavaScript","LLM"],
+    image: "/snow-prompt.png",
+    image2: "/snowprompt.png",
+    image3: "/snowprompt.png",
+    date: "May 10, 2025",
+    url: "https://snow-prompt-builder.vercel.app/",
+  },
+  {
+    id: 5,
     title: "STS Library Design",
     description: "A comprehensive UI/UX design project for a modern digital library platform that provides intuitive access to educational resources. This 3-day intensive design sprint focused on creating a visually striking interface with thoughtful animations that enhance user navigation while maintaining accessibility. The project explores the intersection of digital learning and modern web design, incorporating advanced color theory principles to create distinctive visual hierarchies that guide users through complex information architecture.",
     challenge: "The primary challenge was designing an intuitive interface for a complex library system within an extremely constrained timeline of just 3 days. I needed to create a system that could elegantly handle diverse content types (books, articles, multimedia) while maintaining visual cohesion across all sections. Additionally, implementing effective animations that enhanced rather than distracted from the user experience required careful consideration of motion design principles. The project also demanded a color system that would work across dark and light modes while meeting WCAG accessibility standards.",
@@ -80,8 +100,23 @@ export const projectsData = [
     date: "Sept 20, 2024",
     url: "https://www.figma.com/design/sI4zz3puuDbEFbOiqBBRWG/SnowDev-Tech-Services-Library?node-id=2002-228&p=f&t=Iu7c9f54osYRkeKa-0",
   },
+    {
+    id: 6,
+    title: "MLTI Website",
+    description: "A front-end MVP website for Master Language & Technology Institute to showcase their services to the website's visitors and enable them to get in touch with the enterprise through the website",
+    challenge: "The primary challenge was designing and coding an intuitive and attractive user interface to force visitors to take a look to all the website  within an extremely constrained timeline of just 4 days. I needed to create a system that could elegantly handle diverse loading components,images maintaining visual cohesion and responsiveness across every screen-sized devices. Additionally, implementing effective animations that enhanced rather than distracted from the user experience required careful consideration of motion design principles. The project also demanded a color system that would work across dark and light modes while meeting WCAG accessibility standards.",
+    solution: "I developed a comprehensive design system grounded in color theory principles with color design of MLTI, creating a palette that uses complementary colors to distinguish between the enterprise's services while maintaining a cohesive visual language. For the user experience, I implemented a simple interface with subtle micro-interactions that provide get-in-touch service and guide users through content discovery flows. The animations were thoughtfully coded with motion from framer-motion to support information hierarchy, with primary actions receiving more pronounced motion cues while secondary elements use subtler transitions to avoid overwhelming users.",
+    result: "The website successfully demonstrates advanced UI/UX and simple framer-motion concepts executed within tight constraints. The interface received overwhelmingly positive feedback from test users and the enterprise it's self, who highlighted the intuitive navigation and visually engaging 3D-like experience. The animations effectively enhanced comprehension of the information architecture, with users reporting 30% faster task completion compared to static interface alternatives. The color system not only created a distinctive brand identity but also improved content categorization recognition by 45%. This project exemplifies my ability to apply theoretical design knowledge to practical user interfaces under pressure while maintaining high-quality standards.",
+    category: "Web Apps",
+    tags: ["Tailwind CSS", "ReactJS", "Framer-motion","Typescript","EmailJs"],
+    image: "/mlti.png",
+    image2: "/mlti.png",
+    image3: "/mlt-preview.png",
+    date: "May 1, 2025",
+    url: "https://www.mlt-institute.com/",
+  },
   {
-    id: 5,
+    id: 7,
     title: "Almost All my Designs",
     description: "This project will direct you to a google drive folder containing some product designs i'ved done.",
     challenge: "//",
@@ -96,7 +131,7 @@ export const projectsData = [
     url: "https://drive.google.com/drive/folders/1nxbA6pBJgFooAXlTXaZ1sgeO-tcnZQ1s?usp=sharing",
   },
   {
-    id: 6,
+    id: 8,
     title: "Snow Brain Ai",
     description: "This is a ChatBot powered by gemini-1.5-flash of Google, optimized for speed and efficiency with real-time multimodal reasoning capabilities. The application leverages the model's long context window to provide fast, accurate responses while maintaining low latency for seamless user interaction across multiple languages and complex queries.",
     challenge: "The main challenge was creating a responsive AI assistant that could handle complex multimodal inputs while maintaining high performance on resource-constrained devices. We needed to balance the advanced capabilities of the Gemini model with fast response times and implement proper context management to maintain coherent conversations across extended user sessions.",
@@ -111,7 +146,7 @@ export const projectsData = [
     url: "https://snow-brain-ai.netlify.app/",
   },
   {
-    id: 7,
+    id: 9,
     title: " Front-end Portfolio for a Client",
     description: "A fully responsive front-end portfolio website developed in React within an extremely tight timeline of just 2 days. This project showcases the client's work, skills, and contact information through a modern, clean interface designed for optimal user experience across all devices. The site features smooth animations, an interactive project gallery, and a functional contact form with email integration.",
     challenge: "The primary challenge was delivering a complete, polished portfolio website in just 48 hours while meeting all client requirements. The project demanded rapid design decisions, efficient coding practices, and seamless implementation of responsive layouts. Additionally, integrating a reliable contact form system with email functionality without backend infrastructure required creative solutions within the limited timeframe.",
@@ -126,7 +161,7 @@ export const projectsData = [
     url: "https://paulportofolio.netlify.app/",
   },
   {
-    id: 8,
+    id: 10,
     title: "STS HTML/CSS Portfolio",
     description: "A fully responsive one-page educational website created as a reference model for students I mentor at WorketYamo. This project demonstrates modern web development practices with NEXT.js technology while emphasizing the importance of understanding and implementing raw CSS without relying on frameworks. The site features clean code organization, semantic HTML structure, and responsive design principles that scale elegantly across all device sizes.",
     challenge: "The main challenge was creating an educational project that would effectively demonstrate best practices while remaining accessible to beginning developers. I needed to balance sophisticated techniques with clear, understandable code that students could learn from. Additionally, choosing to implement responsive design with raw CSS rather than using frameworks required careful planning and implementation of media queries and flexible layout systems that would serve as good learning examples.",
@@ -141,7 +176,7 @@ export const projectsData = [
     url: "https://snow-port.netlify.app/",
   },
   {
-    id: 9,
+    id: 11,
     title: "STS_KeyCode App: ASCCI",
     description: "A Character to ASCII Converter application developed as an educational tool for students at WorketYamo. This interactive web application allows users to input any keyboard character and instantly see its corresponding ASCII code. The project demonstrates fundamental JavaScript concepts including event handling, character encoding, DOM manipulation, and user input processing while providing a simple but effective user interface for immediate visual feedback.",
     challenge: "The main challenge was creating an approachable learning project that would effectively teach important JavaScript concepts to beginning developers. I needed to design a project that was simple enough for students to understand completely, yet complex enough to demonstrate real-world programming concepts. Additionally, I had to present character encoding principles in an accessible way while ensuring the application handled all possible inputs correctly, including edge cases like special characters.",
@@ -156,7 +191,7 @@ export const projectsData = [
     url: "https://sts-key-code.netlify.app/",
   },
   {
-    id: 10,
+    id: 12,
     title: "STS Password Generator\n",
     description: "A fully responsive web application that generates strong, secure passwords based on user-defined parameters. This tool addresses the critical security vulnerability of weak password usage by creating complex combinations of characters that are significantly more resistant to brute force attacks and dictionary-based hacking attempts. Users can customize their password length and select which character types to include (uppercase letters, lowercase letters, numbers, and special symbols), giving them control over the security level while maintaining compatibility with various platform requirements.",
     challenge: "The primary challenge was designing an application that balances high security standards with user-friendly functionality. Creating a truly random password generation algorithm that avoids patterns while ensuring the inclusion of all selected character types required careful implementation. Additionally, developing an intuitive interface that works seamlessly across all device sizes while clearly communicating password strength and security concepts to non-technical users presented significant design challenges.",
@@ -171,7 +206,7 @@ export const projectsData = [
     url: "https://sts-password-gen.netlify.app/",
   },
   {
-    id: 11,
+    id: 13,
     title: "🎲 STS Coin Flip 🎰\n",
     description: "A fully responsive web application that digitally recreates the classic heads-or-tails coin flip game from childhood. This interactive experience features realistic 3D coin animations that simulate the physics of a flipping coin, complete with appropriate sound effects and visual feedback. Users can make predictions before each flip, keep track of their score, and enjoy a nostalgic gaming experience that works seamlessly across desktop and mobile devices. The application combines playful design elements with smooth animations to capture the simple joy and suspense of this timeless game of chance.",
     challenge: "The main challenge was creating convincingly realistic coin flip animations that would maintain the authentic feeling of unpredictability found in the physical game. Implementing 3D transformations and physics-based animations that render consistently across different devices and browsers required significant CSS expertise. Additionally, building a truly random outcome generator while maintaining the illusion of a physical coin flip presented an interesting balance of visual design and programming logic. Creating a responsive layout that preserved the game's immersive quality on both large and small screens added another layer of complexity.",
@@ -186,7 +221,7 @@ export const projectsData = [
     url: "https://stscoinapp.netlify.app/",
   },
   {
-    id: 12,
+    id: 14,
     title: "STS Tech Stickers Generator App",
     description: "A fully responsive web application that generates random tech-themed stickers with vibrant designs and modern typography. Users can generate stickers for various technology names, frameworks, and programming languages with a simple click. Each sticker features unique color combinations, shapes, and styling that represent the tech brand's identity while maintaining a cohesive visual language across the collection.",
     challenge: "The primary challenge was creating a system that could generate visually appealing and unique stickers on demand while ensuring they looked professional and maintained brand recognition. I needed to implement a randomization algorithm that would create varied designs without producing unappealing color combinations or illegible text. Additionally, ensuring responsive behavior across all device sizes while preserving the visual quality of the stickers presented significant layout and scaling challenges.",
@@ -199,7 +234,7 @@ export const projectsData = [
     image3: "/SickersThumbanil.png",
     date: "Oct 23, 2023",
     url: "https://sts-tech-sticker.netlify.app/",
-  },
+  }
 ];
 
 const categories = ["All", "Product Design", "UI/UX Design", "Web Apps"];
