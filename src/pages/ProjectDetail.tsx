@@ -1,4 +1,3 @@
-
 import { useParams } from "react-router-dom";
 import Layout from "@/components/layout";
 import { FadeIn, SlideUp } from "@/components/motion";
@@ -7,7 +6,7 @@ import { ArrowLeft, Calendar, ExternalLink, Tag, User } from "lucide-react";
 import { Link } from "react-router-dom";
 import { useState, useEffect } from "react";
 import { projectsData } from "./Projects";
-import {Badge} from "@/components/ui/badge.tsx";
+import { Badge } from "@/components/ui/badge.tsx";
 
 const ProjectDetail = () => {
   const { id } = useParams();
@@ -16,7 +15,7 @@ const ProjectDetail = () => {
 
   useEffect(() => {
     // Find the project by id
-    const foundProject = projectsData.find(p => p.id === Number(id));
+    const foundProject = projectsData.find((p) => p.id === Number(id));
 
     if (foundProject) {
       setProject(foundProject);
@@ -41,7 +40,9 @@ const ProjectDetail = () => {
         <div className="pt-32 pb-20 container">
           <FadeIn className="text-center">
             <h1 className="text-3xl font-bold mb-4">Project Not Found</h1>
-            <p className="text-muted-foreground mb-8">The project you're looking for doesn't exist or has been removed.</p>
+            <p className="text-muted-foreground mb-8">
+              The project you're looking for doesn't exist or has been removed.
+            </p>
             <Button asChild>
               <Link to="/projects">Back to Projects</Link>
             </Button>
@@ -52,25 +53,22 @@ const ProjectDetail = () => {
   }
 
   // Get additional images from project data
-  const additionalImages = [
-    project.image2,
-    project.image3,
-  ].filter(Boolean); // Filter out any undefined images
+  const additionalImages = [project.image2, project.image3].filter(Boolean); // Filter out any undefined images
 
   return (
     <Layout>
       <div className="relative w-full h-[50vh] md:h-[60vh] overflow-hidden bg-black">
-        <img 
-          src={project.image} 
+        <img
+          src={project.image}
           alt={project.title}
           className="w-full h-full object-cover opacity-70"
         />
         <div className="absolute inset-0 bg-gradient-to-b from-black/40 to-black/80" />
         <div className="absolute inset-0 container flex flex-col justify-end pb-12 md:pb-20">
           <FadeIn>
-            <Button 
-              variant="outline" 
-              size="sm" 
+            <Button
+              variant="outline"
+              size="sm"
               className="bg-black/30 backdrop-blur-sm border-white/10 text-white mb-6"
               asChild
             >
@@ -79,8 +77,12 @@ const ProjectDetail = () => {
                 Back to Projects
               </Link>
             </Button>
-            <h1 className="text-3xl md:text-5xl font-bold text-white mb-4">{project.title}</h1>
-            <p className="text-lg md:text-xl text-white/80 max-w-2xl">{project.category}</p>
+            <h1 className="text-3xl md:text-5xl font-bold text-white mb-4">
+              {project.title}
+            </h1>
+            <p className="text-lg md:text-xl text-white/80 max-w-2xl">
+              {project.category}
+            </p>
           </FadeIn>
         </div>
       </div>
@@ -91,29 +93,27 @@ const ProjectDetail = () => {
             <SlideUp>
               <div className="prose dark:prose-invert max-w-none mb-10">
                 <h2 className={"my-5 font-extrabold"}>Project Overview</h2>
-                <p>
-                  {project.description}
-                </p>
+                <p>{project.description}</p>
 
                 <h2 className={"my-5 font-extrabold"}>The Challenge</h2>
-                <p>
-                  {project.challenge}
-                </p>
+                <p>{project.challenge}</p>
 
                 <h2 className={"my-5 font-extrabold"}>The Solution</h2>
-                <p>
-                  {project.solution}
-                </p>
+                <p>{project.solution}</p>
               </div>
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-14">
                 {additionalImages.map((img, index) => (
-                  <div 
-                    key={index} 
-                    className={`overflow-hidden rounded-lg ${index === additionalImages.length - 1 ? "md:col-span-2" : ""}`}
+                  <div
+                    key={index}
+                    className={`overflow-hidden rounded-lg ${
+                      index === additionalImages.length - 1
+                        ? "md:col-span-2"
+                        : ""
+                    }`}
                   >
-                    <img 
-                      src={img} 
+                    <img
+                      src={img}
                       alt={`${project.title} screenshot ${index + 1}`}
                       className="w-full h-auto object-cover transition-transform duration-500 hover:scale-105"
                     />
@@ -123,9 +123,7 @@ const ProjectDetail = () => {
 
               <div className="prose dark:prose-invert max-w-none">
                 <h2 className={"my-5 font-extrabold"}>Results & Impact</h2>
-                <p>
-                  {project.result}
-                </p>
+                <p>{project.result}</p>
               </div>
             </SlideUp>
           </div>
@@ -140,7 +138,9 @@ const ProjectDetail = () => {
                     <Calendar className="h-5 w-5 text-muted-foreground mt-0.5" />
                     <div>
                       <h4 className="font-medium">Project Date</h4>
-                      <p className="text-muted-foreground text-sm">{project.date}</p>
+                      <p className="text-muted-foreground text-sm">
+                        {project.date}
+                      </p>
                     </div>
                   </div>
 
@@ -156,7 +156,9 @@ const ProjectDetail = () => {
                     <Tag className="h-5 w-5 text-muted-foreground mt-0.5" />
                     <div>
                       <h4 className="font-medium">Category</h4>
-                      <p className="text-muted-foreground text-sm">{project.category}</p>
+                      <p className="text-muted-foreground text-sm">
+                        {project.category}
+                      </p>
                     </div>
                   </div>
 
@@ -174,11 +176,26 @@ const ProjectDetail = () => {
                     </div>
                   </div>
 
-                  <div className="pt-4">
+                  <div className="pt-4 space-y-3">
                     <Button className="w-full" asChild>
-                      <a href={project.url} target="_blank" rel="noopener noreferrer">
+                      <a
+                        href={project.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
                         <ExternalLink className="mr-2 h-4 w-4" />
                         Visit Live Project
+                      </a>
+                    </Button>
+
+                    <Button className="w-full" asChild>
+                      <a
+                        href={project.code}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <ExternalLink className="mr-2 h-4 w-4" />
+                        See Github Code
                       </a>
                     </Button>
                   </div>
