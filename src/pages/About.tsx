@@ -35,7 +35,7 @@ const About = () => {
 
   const certifications = [
     {
-      name: "Soon : AWS Solution Architect Associate",
+      name: "AWS Solutions Architect Associate (In progress)",
       issuer: "AWS",
       year: "2025",
     },
@@ -159,7 +159,9 @@ const About = () => {
                       create solutions that are not only technically sound but
                       also intuitive and visually appealing. I believe in
                       creating software that solves real problems while
-                      providing delightful user experiences.
+                      providing delightful user experiences. I containerize and
+                      deploy applications with Docker and work toward AWS cloud
+                      certifications to architect scalable solutions.
                     </p>
                   </div>
                 </SlideUp>
