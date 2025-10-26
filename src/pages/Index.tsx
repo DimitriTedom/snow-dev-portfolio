@@ -1,5 +1,6 @@
 import "@/styles/global.css";
 import Layout from "@/components/layout";
+import HeroSection from "@/components/HeroSection";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -82,64 +83,7 @@ const Index = () => {
 	return (
 		<Layout>
 			{/* Hero Section */}
-			<section className="relative pt-32 pb-20 md:pt-40 md:pb-32 overflow-hidden">
-				<div className="container mx-auto px-4 relative z-10">
-					<div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-						<div>
-							<FadeIn>
-								<p className="text-muted-foreground mb-3">Hey there!</p>
-							</FadeIn>
-
-							<SlideUp delay={0.1}>
-								<h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
-									I'm Dimitri (SnowDev), a{" "}
-									<span className="text-gradient">Full Stack JS developer</span> &{" "}
-									<span className="text-gradient">Designer</span>. <br /> I design,code & deploy Web Apps.
-								</h1>
-							</SlideUp>
-
-							<SlideUp delay={0.2}>
-								<p className="text-muted-foreground text-lg mb-8 max-w-lg">
-									Available for Freelancing • RFJW+9RJ, Yaoundé
-								</p>
-							</SlideUp>
-
-							<SlideUp delay={0.3}>
-								<div className="flex flex-wrap gap-4">
-									<Button size="pill" variant="action" asChild className="px-8">
-										<Link to="/contact">Get in Touch 👋️</Link>
-									</Button>
-									<Button size="pill" variant="outline" asChild>
-										<Link to="/projects">View Projects</Link>
-									</Button>
-								</div>
-							</SlideUp>
-						</div>
-
-						<SlideInRight className="relative lg:flex justify-center items-center hidden">
-							<div className="relative w-full rounded-2xl overflow-hidden">
-								<img
-									src="/SnowDev.png"
-									alt="SnowDev Profile"
-									className="w-full h-full object-contain"
-								/>
-								<div className="absolute inset-0 bg-gradient-to-t from-background/80 to-transparent"></div>
-
-								<div className="absolute bottom-8 left-8 flex flex-col gap-2">
-									{["LLMS-Automation", "UX/UI design", "Graphic design", "MERN Developer"].map((skill, i) => (
-										<div
-											key={skill}
-											className="px-3 py-1 bg-black/50 backdrop-blur-sm text-white text-sm rounded-full inline-block"
-										>
-											{skill}
-										</div>
-									))}
-								</div>
-							</div>
-						</SlideInRight>
-					</div>
-				</div>
-			</section>
+			<HeroSection />
 
 			{/* Experience Section */}
 			<section className="py-16 bg-secondary/30">
