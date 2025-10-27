@@ -2,6 +2,7 @@ import "@/styles/global.css";
 import Layout from "@/components/layout";
 import HeroSection from "@/components/HeroSection";
 import { Button } from "@/components/ui/button";
+import { ButtonColorful } from "@/components/ui/button-colorful";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Link } from "react-router-dom";
@@ -270,9 +271,14 @@ const Index = () => {
 							<p className="text-muted-foreground mb-8 max-w-xl mx-auto">
 								Reach out and let's make it happen! I'm here to turn your ideas into reality with effective design and development.
 							</p>
-							<Button size="pill" variant="action" asChild className="px-8">
-								<Link to="/contact">Let's Talk 👋️</Link>
-							</Button>
+							<ButtonColorful
+								label="Let's Talk 👋️"
+								variant="orange"
+								className="px-8 h-12"
+								asChild
+							>
+								<Link to="/contact" />
+							</ButtonColorful>
 						</SlideUp>
 					</div>
 				</div>

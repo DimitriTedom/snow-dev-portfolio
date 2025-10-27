@@ -7,6 +7,7 @@ import {
 } from "@/components/motion";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
+import { ButtonColorful } from "@/components/ui/button-colorful";
 import { Link } from "react-router-dom";
 import {
   ArrowDown,
@@ -295,12 +296,14 @@ const About = () => {
                   I'm always open to discussing new projects, creative ideas, or
                   opportunities to be part of your vision.
                 </p>
-                <Button
+                <ButtonColorful
+                  label="Contact Me"
+                  variant="orange"
+                  className="h-12 px-8"
                   asChild
-                  className="bg-gradient-to-r from-orange-500 to-red-500 hover:from-orange-600 hover:to-red-600 text-white"
                 >
-                  <Link to="/contact">Contact Me</Link>
-                </Button>
+                  <Link to="/contact" />
+                </ButtonColorful>
               </SlideUp>
             </div>
           </div>

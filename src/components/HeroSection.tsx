@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
+import { ButtonColorful } from "@/components/ui/button-colorful";
 import { Link } from "react-router-dom";
 import { Badge } from "@/components/ui/badge";
 import { Github, Linkedin, Twitter, Globe } from "lucide-react";
@@ -139,24 +140,21 @@ const HeroSection = () => {
               variants={fadeInUp}
               className="flex flex-wrap gap-4 pt-4"
             >
-              <Button
-                size="lg"
-                className="bg-gradient-to-r from-orange-500 to-red-500 hover:from-orange-600 hover:to-red-600 text-white px-8 py-6 text-lg rounded-full shadow-lg hover:shadow-xl transition-all"
+              <ButtonColorful
+                label="Portfolio"
+                variant="orange"
+                className="px-8 py-6 text-lg rounded-full shadow-lg hover:shadow-xl h-12"
                 asChild
               >
-                <Link to="/projects">
-                  Portfolio 
-                  <span className="ml-2 w-3 h-3 bg-red-500 rounded-full animate-pulse"></span>
-                </Link>
-              </Button>
-              <Button
-                size="lg"
-                variant="outline"
-                className="px-8 py-6 text-lg rounded-full border-2 hover:bg-secondary"
+                <Link to="/projects" />
+              </ButtonColorful>
+              <ButtonColorful
+                label="Hire Me"
+                className="px-8 py-6 text-lg rounded-full border-2 hover:bg-secondary h-12"
                 asChild
               >
-                <Link to="/contact">Hire Me</Link>
-              </Button>
+                <Link to="/contact" />
+              </ButtonColorful>
             </motion.div>
 
             {/* Social Links */}
