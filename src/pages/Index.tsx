@@ -5,10 +5,12 @@ import { Button } from "@/components/ui/button";
 import { ButtonColorful } from "@/components/ui/button-colorful";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
+import { AchievementCard } from "@/components/ui/achievement-card";
+import { achievementsData } from "@/data/achievements";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { FadeIn, SlideUp, SlideInRight, StaggeredContainer, StaggeredItem } from "@/components/motion";
-import { Briefcase, Code, Layers, Sparkles } from "lucide-react";
+import { Briefcase, Code, Layers, Sparkles, Trophy } from "lucide-react";
 
 // Define data
 const skills = [
@@ -260,6 +262,45 @@ const Index = () => {
 				</div>
 			</section>
 
+			{/* Featured Achievements Section */}
+			<section className="py-16">
+				<div className="container mx-auto px-4">
+					<FadeIn className="text-center mb-12">
+						<div className="flex items-center gap-2 mb-2 justify-center">
+							<Trophy className="h-5 w-5 text-yellow-500" />
+							<span className="text-sm text-yellow-500 font-medium tracking-wider uppercase">Achievements</span>
+						</div>
+						<h2 className="text-2xl md:text-3xl font-bold mb-4">Notable Accomplishments</h2>
+						<p className="text-muted-foreground max-w-2xl mx-auto">
+							Some of my certifications and achievements that showcase my commitment to continuous learning and excellence.
+						</p>
+					</FadeIn>
+
+					<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
+						{achievementsData.slice(0, 3).map((achievement, index) => (
+							<motion.div
+								key={achievement.id}
+								initial={{ opacity: 0, y: 20 }}
+								animate={{ opacity: 1, y: 0 }}
+								transition={{ delay: index * 0.1 }}
+							>
+								<AchievementCard
+									achievement={achievement}
+									showPreview={true}
+									className="h-full"
+								/>
+							</motion.div>
+						))}
+					</div>
+
+					<FadeIn className="text-center">
+						<Button variant="outline" asChild>
+							<Link to="/achievements">View All Achievements</Link>
+						</Button>
+					</FadeIn>
+				</div>
+			</section>
+
 			{/* CTA Section */}
 			<section className="py-20 bg-gradient-to-r from-secondary to-secondary/60">
 				<div className="container mx-auto px-4">
@@ -277,7 +318,7 @@ const Index = () => {
 								className="px-8 h-12"
 								asChild
 							>
-								<Link to="/contact" />
+								<Link to="/contact">Let's Talk 👋️</Link>
 							</ButtonColorful>
 						</SlideUp>
 					</div>

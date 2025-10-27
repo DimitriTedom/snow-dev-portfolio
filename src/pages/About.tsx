@@ -8,6 +8,8 @@ import {
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { ButtonColorful } from "@/components/ui/button-colorful";
+import { AchievementCard } from "@/components/ui/achievement-card";
+import { achievementsData } from "@/data/achievements";
 import { Link } from "react-router-dom";
 import {
   ArrowDown,
@@ -256,31 +258,25 @@ const About = () => {
                   </StaggeredContainer>
 
                   <div className="mt-6">
-                    <h3 className="text-lg font-medium mb-4 flex items-center gap-2">
-                      <Trophy className="h-4 w-4 text-muted-foreground" />
-                      Notable Achievements
-                    </h3>
-                    <ul className="space-y-2">
-                      {achievements.map((achievement, index) => (
-                        <motion.li
-                          key={index}
-                          initial={{ opacity: 0, x: -20 }}
-                          animate={{ opacity: 1, x: 0 }}
-                          transition={{ delay: 0.1 * index }}
-                          className="flex items-start gap-2"
-                        >
-                          <span className="mt-1 w-1.5 h-1.5 rounded-full bg-primary inline-block" />
-                          <a
-                            href={achievement.url}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="hover:text-blue-300 hover:underline"
-                          >
-                            {achievement.title}
-                          </a>
-                        </motion.li>
+                    <div className="flex items-center justify-between mb-4">
+                      <h3 className="text-lg font-medium flex items-center gap-2">
+                        <Trophy className="h-4 w-4 text-muted-foreground" />
+                        Recent Achievements
+                      </h3>
+                      <Button variant="outline" size="sm" asChild>
+                        <a href="/achievements">View All</a>
+                      </Button>
+                    </div>
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                      {achievementsData.slice(0, 4).map((achievement) => (
+                        <AchievementCard
+                          key={achievement.id}
+                          achievement={achievement}
+                          showPreview={false}
+                          className="h-full"
+                        />
                       ))}
-                    </ul>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -302,7 +298,7 @@ const About = () => {
                   className="h-12 px-8"
                   asChild
                 >
-                  <Link to="/contact" />
+                  <Link to="/contact">Contact Me</Link>
                 </ButtonColorful>
               </SlideUp>
             </div>
