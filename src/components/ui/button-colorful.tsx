@@ -1,22 +1,33 @@
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import { ArrowUpRight } from "lucide-react";
+import React from "react";
+import { Slot } from "@radix-ui/react-slot";
 
-interface ButtonColorfulProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
+interface ButtonColorfulProps extends Omit<React.ButtonHTMLAttributes<HTMLButtonElement>, 'children'> {
     label?: string;
     variant?: "default" | "orange";
+    asChild?: boolean;
+    children?: React.ReactNode;
 }
 
 export function ButtonColorful({
     className,
     label = "Explore Components",
     variant = "default",
+    asChild,
+    children,
     ...props
 }: ButtonColorfulProps) {
+    const Comp = asChild ? Slot : "button";
+    
     return (
-        <Button
+        <Comp
             className={cn(
-                "relative h-10 px-4 overflow-hidden",
+                "relative h-10 px-4 overflow-hidden inline-flex items-center justify-center",
+                "whitespace-nowrap rounded-md text-sm font-medium ring-offset-background",
+                "transition-colors focus-visible:outline-none focus-visible:ring-2",
+                "focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50",
                 variant === "orange" 
                     ? "bg-gradient-to-r from-orange-500 to-red-500 dark:from-orange-400 dark:to-red-400"
                     : "bg-zinc-900 dark:bg-zinc-100",
@@ -54,6 +65,9 @@ export function ButtonColorful({
                         : "text-white/90 dark:text-zinc-900/90"
                 )} />
             </div>
-        </Button>
+            
+            {/* Hidden children for proper asChild behavior */}
+            {asChild && <span className="sr-only">{children}</span>}
+        </Comp>
     );
 }

@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 import { ButtonColorful } from "@/components/ui/button-colorful";
 import { Link } from "react-router-dom";
 import { Badge } from "@/components/ui/badge";
-import { Github, Linkedin, Twitter, Globe } from "lucide-react";
+import { Github, Linkedin, Twitter, Globe, Play } from "lucide-react";
 
 const HeroSection = () => {
   // Animation variants
@@ -21,270 +21,195 @@ const HeroSection = () => {
     transition: {
       duration: 3,
       repeat: Infinity,
-      ease: "easeInOut",
+      ease: "easeInOut" as const,
     },
   };
 
-  const skills = ["Prototype", "Dashboard", "Mobile App Design", "Design System", "Website Design"];
-  const socialLinks = [
-    { icon: Github, url: "https://github.com/DimitriTedom", label: "GitHub" },
-    { icon: Linkedin, url: "https://linkedin.com/in/dimitri-tedom", label: "LinkedIn" },
-    { icon: Twitter, url: "https://twitter.com/dimitri-tedom", label: "Twitter" },
-    { icon: Globe, url: "https://snowdev-portfolio.vercel.app", label: "Website" },
+  const partnerLogos = [
+    { name: "React", image: "https://reactnative.dev/img/header_logo.svg" },
+    { name: "Node.js", image: "https://www.vectorlogo.zone/logos/nodejs/nodejs-icon.svg" },
+    { name: "MongoDB", image: "https://www.vectorlogo.zone/logos/mongodb/mongodb-icon.svg" },
+    { name: "Docker", image: "https://www.vectorlogo.zone/logos/docker/docker-icon.svg" },
+    { name: "AWS", image: "https://www.vectorlogo.zone/logos/amazon_aws/amazon_aws-icon.svg" },
   ];
 
   return (
-    <section className="relative min-h-screen pt-32 pb-20 overflow-hidden">
+    <section className="relative min-h-screen pt-32 pb-20 overflow-hidden bg-gradient-to-br from-background via-background to-orange-50/30 dark:to-orange-950/20">
       {/* Animated background elements */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <motion.div
-          className="absolute top-20 right-10 w-32 h-32 bg-gradient-to-br from-orange-400/20 to-red-500/20 rounded-full blur-3xl"
+          className="absolute top-20 right-10 w-32 h-32 bg-gradient-to-br from-orange-400/10 to-red-500/10 rounded-full blur-3xl"
           animate={floatingAnimation}
         />
         <motion.div
-          className="absolute bottom-20 left-10 w-40 h-40 bg-gradient-to-br from-blue-400/20 to-purple-500/20 rounded-full blur-3xl"
+          className="absolute bottom-20 left-10 w-40 h-40 bg-gradient-to-br from-purple-400/10 to-pink-500/10 rounded-full blur-3xl"
           animate={{ ...floatingAnimation, transition: { ...floatingAnimation.transition, delay: 1 } }}
         />
       </div>
 
       <div className="container mx-auto px-4 relative z-10">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
-          {/* Left Column - Text Content */}
-          <div className="lg:col-span-5 space-y-6">
-            {/* Greeting Badge */}
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center min-h-[80vh]">
+          {/* Left Column - Content */}
+          <div className="space-y-8">
+            {/* Main Heading */}
             <motion.div
               custom={0}
               initial="hidden"
               animate="visible"
               variants={fadeInUp}
+              className="space-y-4"
             >
-              <Badge 
-                variant="outline" 
-                className="text-sm px-4 py-2 border-2 border-orange-500/30 bg-orange-50/50 dark:bg-orange-950/20 text-orange-600 dark:text-orange-400 mb-4"
-              >
-                <span className="mr-2">👋</span>
-                Hello There!
-              </Badge>
+              <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold leading-tight">
+                Develop your
+                <br />
+                <span className="text-gradient bg-gradient-to-r from-orange-500 to-red-500 bg-clip-text text-transparent">
+                  skills in a new
+                </span>
+                <br />
+                and unique way
+              </h1>
             </motion.div>
 
-            {/* Main Heading */}
-            <motion.div
+            {/* Description */}
+            <motion.p
               custom={1}
               initial="hidden"
               animate="visible"
               variants={fadeInUp}
-              className="space-y-2"
+              className="text-lg md:text-xl text-muted-foreground max-w-xl leading-relaxed"
             >
-              <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold leading-tight">
-                I'm <span className="text-gradient bg-gradient-to-r from-orange-500 to-red-500 bg-clip-text text-transparent">Dimitri Tedom</span>
-              </h1>
-            </motion.div>
+              Explore a comprehensive approach to web development that combines cutting-edge technologies with innovative design thinking to create exceptional digital experiences.
+            </motion.p>
 
-            {/* Subtitle */}
-            <motion.p
+            {/* CTA Buttons */}
+            <motion.div
               custom={2}
               initial="hidden"
               animate="visible"
               variants={fadeInUp}
-              className="text-lg text-muted-foreground max-w-md"
-            >
-              Full Stack JavaScript Developer based in Cameroon
-            </motion.p>
-
-            {/* Testimonial Quote */}
-            <motion.div
-              custom={3}
-              initial="hidden"
-              animate="visible"
-              variants={fadeInUp}
-              className="relative pl-6 border-l-4 border-orange-500 py-2"
-            >
-              <span className="absolute -left-2 -top-2 text-4xl text-orange-500/30">"</span>
-              <p className="text-sm italic text-muted-foreground">
-                SnowDev's Remarkable Design Transformed Our Website - Highly Recommended!
-              </p>
-            </motion.div>
-
-            {/* Reviews Section */}
-            <motion.div
-              custom={4}
-              initial="hidden"
-              animate="visible"
-              variants={fadeInUp}
-              className="flex items-center gap-4"
-            >
-              <div className="flex -space-x-3">
-                {[1, 2, 3, 4].map((i) => (
-                  <div
-                    key={i}
-                    className="w-10 h-10 rounded-full border-2 border-background bg-gradient-to-br from-blue-400 to-purple-500 flex items-center justify-center text-white font-semibold text-sm"
-                  >
-                    {String.fromCharCode(64 + i)}
-                  </div>
-                ))}
-              </div>
-              <div>
-                <p className="font-bold text-orange-500">150+ Reviews</p>
-                <p className="text-sm text-muted-foreground">
-                  <span className="text-yellow-500">★★★★★</span> (4.9 of 5)
-                </p>
-                <p className="text-xs text-muted-foreground">Across both Work Clients</p>
-              </div>
-            </motion.div>
-
-            {/* CTA Buttons */}
-            <motion.div
-              custom={5}
-              initial="hidden"
-              animate="visible"
-              variants={fadeInUp}
-              className="flex flex-wrap gap-4 pt-4"
+              className="flex flex-wrap gap-4"
             >
               <ButtonColorful
-                label="Portfolio"
+                label="Get Started"
                 variant="orange"
-                className="px-8 py-6 text-lg rounded-full shadow-lg hover:shadow-xl h-12"
+                className="px-8 py-4 text-lg rounded-full shadow-lg hover:shadow-xl h-14"
                 asChild
               >
                 <Link to="/projects" />
               </ButtonColorful>
-              <ButtonColorful
-                label="Hire Me"
-                className="px-8 py-6 text-lg rounded-full border-2 hover:bg-secondary h-12"
+              <Button
+                size="lg"
+                variant="outline"
+                className="px-8 py-4 text-lg rounded-full border-2 hover:bg-secondary h-14 flex items-center gap-2"
                 asChild
               >
-                <Link to="/contact" />
-              </ButtonColorful>
-            </motion.div>
-
-            {/* Social Links */}
-            <motion.div
-              custom={6}
-              initial="hidden"
-              animate="visible"
-              variants={fadeInUp}
-              className="pt-4"
-            >
-              <p className="text-sm text-muted-foreground mb-3">Follow Me On:</p>
-              <div className="flex gap-3">
-                {socialLinks.map((social, index) => (
-                  <motion.a
-                    key={index}
-                    href={social.url}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="w-10 h-10 rounded-full bg-secondary hover:bg-accent flex items-center justify-center transition-colors"
-                    whileHover={{ scale: 1.1 }}
-                    whileTap={{ scale: 0.95 }}
-                    aria-label={social.label}
-                  >
-                    <social.icon className="w-5 h-5" />
-                  </motion.a>
-                ))}
-              </div>
+                <Link to="/about">
+                  <Play className="w-4 h-4" />
+                  Watch Demo
+                </Link>
+              </Button>
             </motion.div>
           </div>
 
-          {/* Right Column - Image & Skills */}
-          <div className="lg:col-span-7 relative">
-            <div className="relative">
-              {/* Main Image Container with Orange Circle Background */}
+          {/* Right Column - Image & Floating Elements */}
+          <div className="relative lg:flex justify-center items-center">
+            <div className="relative max-w-lg mx-auto">
+              {/* Main Profile Image */}
               <motion.div
                 initial={{ opacity: 0, scale: 0.8 }}
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 0.6 }}
-                className="relative mx-auto max-w-md lg:max-w-lg"
+                className="relative"
               >
-                {/* Orange Circle Background */}
-                <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[400px] h-[400px] md:w-[500px] md:h-[500px] bg-gradient-to-br from-orange-500 to-red-500 rounded-full -z-10" />
-                
-                {/* Profile Image */}
                 <img
                   src="/SnowDev.png"
                   alt="Dimitri Tedom - SnowDev"
-                  className="relative z-10 w-full h-auto object-contain drop-shadow-2xl"
+                  className="w-full h-auto object-contain drop-shadow-2xl relative z-10"
                 />
-
-                {/* Floating Badge - Top Right */}
-                <motion.div
-                  className="absolute -top-4 -right-4 md:top-8 md:right-0 bg-white dark:bg-card rounded-full px-4 py-2 shadow-lg border-2 border-orange-500/20"
-                  animate={{ y: [0, -10, 0] }}
-                  transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
-                >
-                  <p className="text-xs font-semibold text-orange-500 flex items-center gap-1">
-                    <span className="w-2 h-2 bg-green-500 rounded-full animate-pulse"></span>
-                    Hire a expert
-                  </p>
-                </motion.div>
+                
+                {/* Purple decorative circle */}
+                <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[400px] h-[400px] md:w-[500px] md:h-[500px] bg-gradient-to-br from-purple-500/20 to-pink-500/20 rounded-full -z-10 blur-3xl" />
               </motion.div>
 
-              {/* Skill Tags - Positioned around the image */}
-              <div className="absolute top-0 right-0 bottom-0 left-0 pointer-events-none">
-                {skills.map((skill, index) => {
-                  const positions = [
-                    "top-12 right-0",
-                    "top-32 right-4",
-                    "top-56 right-8",
-                    "bottom-32 right-12",
-                    "bottom-12 right-4",
-                  ];
-                  
-                  return (
-                    <motion.div
-                      key={skill}
-                      className={`absolute ${positions[index]} pointer-events-auto`}
-                      initial={{ opacity: 0, x: 20 }}
-                      animate={{ opacity: 1, x: 0 }}
-                      transition={{ delay: 0.8 + index * 0.1 }}
-                    >
-                      <Badge
-                        className={`${
-                          index % 2 === 0
-                            ? "bg-gradient-to-r from-orange-500 to-red-500 text-white border-0"
-                            : "bg-card border-2 border-orange-500/20"
-                        } px-3 py-1.5 text-xs font-medium shadow-lg whitespace-nowrap`}
-                      >
-                        {skill}
-                      </Badge>
-                    </motion.div>
-                  );
-                })}
-              </div>
+              {/* Floating Cards */}
+              <motion.div
+                className="absolute -top-4 -right-4 md:top-8 md:right-4 bg-white dark:bg-card rounded-2xl p-4 shadow-xl border border-orange-200/50 dark:border-orange-800/30 max-w-[200px]"
+                animate={{ y: [0, -10, 0] }}
+                transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
+              >
+                <div className="flex items-center gap-3">
+                  <div className="w-10 h-10 bg-gradient-to-br from-orange-500 to-red-500 rounded-full flex items-center justify-center">
+                    <span className="text-white font-bold text-sm">JS</span>
+                  </div>
+                  <div>
+                    <p className="font-semibold text-sm">JavaScript Expert</p>
+                    <p className="text-xs text-muted-foreground">2+ Years Experience</p>
+                  </div>
+                </div>
+              </motion.div>
+
+              <motion.div
+                className="absolute -bottom-8 -left-4 md:bottom-12 md:left-8 bg-white dark:bg-card rounded-2xl p-4 shadow-xl border border-purple-200/50 dark:border-purple-800/30 max-w-[180px]"
+                animate={{ y: [0, 10, 0] }}
+                transition={{ duration: 2.5, repeat: Infinity, ease: "easeInOut", delay: 0.5 }}
+              >
+                <div className="flex items-center gap-3">
+                  <div className="w-10 h-10 bg-gradient-to-br from-purple-500 to-pink-500 rounded-full flex items-center justify-center">
+                    <span className="text-white font-bold text-sm">UI</span>
+                  </div>
+                  <div>
+                    <p className="font-semibold text-sm">UI/UX Design</p>
+                    <p className="text-xs text-muted-foreground">Creative Solutions</p>
+                  </div>
+                </div>
+              </motion.div>
+
+              <motion.div
+                className="absolute top-1/2 -right-8 md:-right-12 bg-white dark:bg-card rounded-2xl p-3 shadow-xl border border-green-200/50 dark:border-green-800/30"
+                animate={{ x: [0, 10, 0] }}
+                transition={{ duration: 3, repeat: Infinity, ease: "easeInOut", delay: 1 }}
+              >
+                <div className="text-center">
+                  <div className="w-12 h-12 bg-gradient-to-br from-green-500 to-emerald-500 rounded-full flex items-center justify-center mx-auto mb-2">
+                    <span className="text-white font-bold text-lg">95%</span>
+                  </div>
+                  <p className="text-xs font-semibold">Client Satisfaction</p>
+                </div>
+              </motion.div>
             </div>
           </div>
         </div>
-      </div>
 
-      {/* Bottom Section - Categories */}
-      <motion.div
-        initial={{ opacity: 0, y: 30 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ delay: 1.2, duration: 0.6 }}
-        className="container mx-auto px-4 mt-20 relative z-10"
-      >
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-4xl mx-auto">
-          {[
-            { title: "Website Design", icon: "🌐" },
-            { title: "Dashboard", icon: "📊" },
-            { title: "Wireframe", icon: "📐" },
-            { title: "User Research", icon: "🔍" },
-          ].map((category, index) => (
-            <motion.div
-              key={category.title}
-              className="text-center p-6 rounded-2xl bg-secondary/50 hover:bg-secondary transition-colors cursor-pointer group"
-              whileHover={{ y: -5 }}
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 1.4 + index * 0.1 }}
-            >
-              <span className="text-3xl mb-2 block group-hover:scale-110 transition-transform">
-                {category.icon}
-              </span>
-              <h3 className="font-semibold text-sm">{category.title}</h3>
-            </motion.div>
-          ))}
-        </div>
-      </motion.div>
+        {/* Bottom Section - Tech Stack Partners */}
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 1.2, duration: 0.6 }}
+          className="mt-20 relative z-10"
+        >
+          <div className="text-center mb-8">
+            <p className="text-muted-foreground text-sm mb-6">Trusted by technologies and frameworks</p>
+            <div className="flex justify-center items-center gap-8 md:gap-12 flex-wrap opacity-60 hover:opacity-100 transition-opacity">
+              {partnerLogos.map((logo, index) => (
+                <motion.div
+                  key={logo.name}
+                  className="flex items-center justify-center grayscale hover:grayscale-0 transition-all duration-300"
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ delay: 1.4 + index * 0.1 }}
+                  whileHover={{ scale: 1.1 }}
+                >
+                  <img 
+                    src={logo.image} 
+                    alt={logo.name} 
+                    className="h-8 w-8 md:h-10 md:w-10 object-contain filter dark:brightness-200" 
+                  />
+                </motion.div>
+              ))}
+            </div>
+          </div>
+        </motion.div>
+      </div>
     </section>
   );
 };
