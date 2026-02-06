@@ -84,8 +84,8 @@ const Navbar = () => {
                 onClick={() => setActiveTab(link.name)}
                 className={cn(
                   "relative cursor-pointer text-sm font-semibold px-4 py-2 rounded-full transition-colors",
-                  "text-foreground/80 hover:text-primary",
-                  isActive && "text-primary"
+                  "text-foreground/80 hover:text-orange-500",
+                  isActive && "text-orange-500"
                 )}
               >
                 <span className="hidden md:inline">{link.name}</span>
@@ -95,7 +95,7 @@ const Navbar = () => {
                 {isActive && (
                   <motion.div
                     layoutId="navbar-lamp"
-                    className="absolute inset-0 w-full bg-primary/10 rounded-full -z-10"
+                    className="absolute inset-0 w-full bg-orange-500/10 rounded-full -z-10"
                     initial={false}
                     transition={{
                       type: "spring",
@@ -103,10 +103,10 @@ const Navbar = () => {
                       damping: 30,
                     }}
                   >
-                    <div className="absolute -top-2 left-1/2 -translate-x-1/2 w-8 h-1 bg-primary rounded-t-full">
-                      <div className="absolute w-12 h-6 bg-primary/20 rounded-full blur-md -top-2 -left-2" />
-                      <div className="absolute w-8 h-6 bg-primary/20 rounded-full blur-md -top-1" />
-                      <div className="absolute w-4 h-4 bg-primary/20 rounded-full blur-sm top-0 left-2" />
+                    <div className="absolute -top-2 left-1/2 -translate-x-1/2 w-8 h-1 bg-orange-500 rounded-t-full">
+                      <div className="absolute w-12 h-6 bg-orange-500/20 rounded-full blur-md -top-2 -left-2" />
+                      <div className="absolute w-8 h-6 bg-orange-500/20 rounded-full blur-md -top-1" />
+                      <div className="absolute w-4 h-4 bg-orange-500/20 rounded-full blur-sm top-0 left-2" />
                     </div>
                   </motion.div>
                 )}
@@ -120,7 +120,7 @@ const Navbar = () => {
           onClick={toggleTheme} 
           variant="ghost" 
           size="icon" 
-          className="h-8 w-8 rounded-full flex-shrink-0 hover:bg-primary/10"
+          className="h-8 w-8 rounded-full flex-shrink-0 hover:bg-orange-500/10"
         >
           {theme === "dark" ? (
             <Sun className="h-4 w-4" />
