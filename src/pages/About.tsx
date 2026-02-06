@@ -112,7 +112,7 @@ const About = () => {
                 <SlideUp>
                   <div className="rounded-lg overflow-hidden mb-4">
                     <img
-                      src="/SnowDev.png"
+                      src="/about-img.jpg"
                       alt="SnowDev"
                       className="w-full h-auto object-cover aspect-square"
                     />

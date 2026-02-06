@@ -190,7 +190,7 @@ const HeroSection = () => {
                 className="relative"
               >
                 <img
-                  src="/SnowDev.png"
+                  src="/home-img.jpg"
                   alt="Dimitri Tedom - SnowDev"
                   className="w-full h-auto object-contain drop-shadow-2xl relative z-0"
                 />

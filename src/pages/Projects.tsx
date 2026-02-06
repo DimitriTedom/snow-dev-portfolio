@@ -193,7 +193,7 @@ export const projectsData = [
     ],
     image: "https://snow-brain-ai.vercel.app/Snow-Brain-ai-preview.png",
     image2: "https://snow-brain-ai.vercel.app/Snow-Brain-AI.png",
-    image3: "https://snow-brain-ai.vercel.app/Snow-Brain-ai-preview.png",
+    image3: "https://snow-brain-ai.vercel.app/eSnow-Brain-ai-preview.png",
     date: "Sept 12, 2024",
     url: "https://snow-brain-ai.vercel.app/",
     code: "https://github.com/DimitriTedom/Snow-Brain-Ai",
