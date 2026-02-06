@@ -261,8 +261,8 @@ const Contact = () => {
                       <p className="text-muted-foreground text-sm mt-2">
                         Currently accepting new projects and collaboration opportunities.
                       </p>
-                      <div className="mt-4 p-2 bg-green-500/20 rounded-full inline-flex items-center gap-2">
-                        <span className="h-2 w-2 rounded-full bg-green-500"></span>
+                      <div className="mt-4 p-2 bg-orange-500/20 rounded-full inline-flex items-center gap-2">
+                        <span className="h-2 w-2 rounded-full bg-orange-500"></span>
                         <span className="text-xs font-medium text-orange-600 dark:text-orange-400">
                           Available for Hire
                         </span>

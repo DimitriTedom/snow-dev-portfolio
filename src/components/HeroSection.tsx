@@ -224,12 +224,12 @@ const HeroSection = () => {
               </motion.div>
 
               <motion.div
-                className="absolute -bottom-12 sm:-bottom-16 md:-bottom-12 lg:-bottom-8 -left-8 sm:-left-12 md:-left-16 lg:-left-20 bg-white dark:bg-card rounded-2xl p-2 sm:p-3 md:p-4 shadow-xl border border-blue-200/50 dark:border-blue-800/30 max-w-[160px] sm:max-w-[180px] md:max-w-[200px] z-20"
+                className="absolute -bottom-12 sm:-bottom-16 md:-bottom-12 lg:-bottom-8 -left-8 sm:-left-12 md:-left-16 lg:-left-20 bg-white dark:bg-card rounded-2xl p-2 sm:p-3 md:p-4 shadow-xl border border-orange-200/50 dark:border-orange-800/30 max-w-[160px] sm:max-w-[180px] md:max-w-[200px] z-20"
                 animate={{ y: [0, 10, 0] }}
                 transition={{ duration: 2.5, repeat: Infinity, ease: "easeInOut", delay: 0.5 }}
               >
                 <div className="flex items-center gap-2 sm:gap-3">
-                  <div className="w-8 sm:w-9 md:w-10 h-8 sm:h-9 md:h-10 bg-gradient-to-br from-blue-500 to-cyan-500 rounded-full flex items-center justify-center">
+                  <div className="w-8 sm:w-9 md:w-10 h-8 sm:h-9 md:h-10 bg-gradient-to-br from-orange-500 to-red-500 rounded-full flex items-center justify-center">
                     <span className="text-white font-bold text-xs sm:text-sm">🎨</span>
                   </div>
                   <div>
@@ -240,12 +240,12 @@ const HeroSection = () => {
               </motion.div>
 
               <motion.div
-                className="absolute top-1/4 -left-12 sm:-left-16 md:-left-20 lg:-left-24 bg-white dark:bg-card rounded-2xl p-2 sm:p-3 shadow-xl border border-purple-200/50 dark:border-purple-800/30 max-w-[140px] sm:max-w-[160px] md:max-w-[180px] z-20"
+                className="absolute top-1/4 -left-12 sm:-left-16 md:-left-20 lg:-left-24 bg-white dark:bg-card rounded-2xl p-2 sm:p-3 shadow-xl border border-orange-200/50 dark:border-orange-800/30 max-w-[140px] sm:max-w-[160px] md:max-w-[180px] z-20"
                 animate={{ x: [0, -10, 0] }}
                 transition={{ duration: 3.5, repeat: Infinity, ease: "easeInOut", delay: 0.8 }}
               >
                 <div className="flex items-center gap-2 sm:gap-3">
-                  <div className="w-8 sm:w-9 md:w-10 h-8 sm:h-9 md:h-10 bg-gradient-to-br from-purple-500 to-pink-500 rounded-full flex items-center justify-center">
+                  <div className="w-8 sm:w-9 md:w-10 h-8 sm:h-9 md:h-10 bg-gradient-to-br from-orange-500 to-red-500 rounded-full flex items-center justify-center">
                     <span className="text-white font-bold text-xs sm:text-sm">🤖</span>
                   </div>
                   <div>
@@ -256,12 +256,12 @@ const HeroSection = () => {
               </motion.div>
 
               <motion.div
-                className="absolute top-1/2 -right-12 sm:-right-16 md:-right-20 lg:-right-24 bg-white dark:bg-card rounded-2xl p-2 sm:p-3 shadow-xl border border-green-200/50 dark:border-green-800/30 z-20"
+                className="absolute top-1/2 -right-12 sm:-right-16 md:-right-20 lg:-right-24 bg-white dark:bg-card rounded-2xl p-2 sm:p-3 shadow-xl border border-orange-200/50 dark:border-orange-800/30 z-20"
                 animate={{ x: [0, 10, 0] }}
                 transition={{ duration: 3, repeat: Infinity, ease: "easeInOut", delay: 1 }}
               >
                 <div className="text-center">
-                  <div className="w-10 sm:w-11 md:w-12 h-10 sm:h-11 md:h-12 bg-gradient-to-br from-green-500 to-emerald-500 rounded-full flex items-center justify-center mx-auto mb-1 sm:mb-2">
+                  <div className="w-10 sm:w-11 md:w-12 h-10 sm:h-11 md:h-12 bg-gradient-to-br from-orange-500 to-red-500 rounded-full flex items-center justify-center mx-auto mb-1 sm:mb-2">
                     <span className="text-white font-bold text-xs sm:text-sm">☁️</span>
                   </div>
                   <p className="text-[10px] sm:text-xs font-semibold text-gray-900 dark:text-white">AWS Cloud Architect</p>
