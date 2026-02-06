@@ -47,22 +47,22 @@ const experiences = [
 
 const projects = [
 	{
-		title: "Youtube Thumbnail Design",
-		category: "Product Design",
-		date: "Mar 22, 2025",
-		image: "/ChesFlora Demo_Thumbnail.png",
+		title: "NjangiTech - Tontine Management",
+		category: "Web Apps",
+		date: "Feb 6, 2026",
+		image: "/tontine-app.png",
+	},
+	{
+		title: "ChezFlora E-commerce Web App",
+		category: "Web Apps",
+		date: "April 20, 2025",
+		image: "/ChezFlora_Thumbnail.png",
 	},
 	{
 		title: "STS Library Design",
 		category: "UI/UX Design",
 		date: "Sep 20, 2024",
 		image: "/UI_UX_Thumbnail.png",
-	},
-	{
-		title: "ChezFlora E-commerce Web App",
-		category: "Landing Page",
-		date: "April 2, 2025",
-		image: "/ChezFlora_Thumbnail.png",
 	},
 ];
 

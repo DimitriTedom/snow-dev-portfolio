@@ -92,6 +92,26 @@ export const projectsData = [
   },
   {
     id: 4,
+    title: "NjangiTech - Système de Gestion de Tontine",
+    description:
+      "A comprehensive Tontine (rotating savings and credit association) management system designed for the university course TP-INF 221. This full-stack application enables groups to efficiently manage their savings pools, track member contributions, monitor cash flow, and maintain transparent financial records. The platform features a modern, intuitive dashboard displaying real-time statistics including cash balance, active members, contribution trends over the last 6 sessions, and credit distribution status. Built with a focus on financial transparency and ease of use, the system streamlines the traditional tontine process while maintaining the community-oriented nature of these savings groups.",
+    challenge:
+      "The primary challenge was creating a robust financial management system that could handle complex tontine operations while remaining accessible to users with varying levels of technical expertise. I needed to implement secure user authentication with role-based access control to protect sensitive financial data, ensure accurate transaction tracking with no margin for error, and design an intuitive interface that makes complex financial operations simple. Additionally, the system required real-time data synchronization to keep all members informed about contributions, withdrawals, and credit distributions. Balancing security, usability, and performance while adhering to academic project requirements presented significant technical and design challenges.",
+    solution:
+      "I developed a modern full-stack application using React with TypeScript for type safety and better code maintainability. The frontend leverages Tailwind CSS for a clean, responsive design that works seamlessly across devices. For state management and data handling, I integrated PostgreSQL with Supabase as the backend-as-a-service, providing real-time database updates, authentication, and secure API endpoints. The dashboard implements interactive data visualizations showing contribution trends and financial status at a glance. I created a comprehensive role-based authentication system allowing administrators to manage members while regular users can track their personal contributions and view group statistics. The application architecture follows best practices with component-based design, proper separation of concerns, and optimized database queries for performance.",
+    result:
+      "The NjangiTech Tontine Management System successfully modernizes traditional community savings practices by providing a secure, transparent, and user-friendly digital platform. The system has been deployed to production on Vercel, demonstrating its reliability and scalability. Users can now manage their tontine operations with confidence, benefiting from automated calculations, real-time updates, and comprehensive financial tracking. The project showcases my ability to build complete full-stack applications that solve real-world problems while meeting strict academic standards. The clean codebase, modern tech stack, and production-ready deployment demonstrate professional-level development practices. This project exemplifies my skills in React, TypeScript, PostgreSQL, authentication systems, and delivering production-quality applications that combine technical excellence with practical utility.",
+    category: "Web Apps",
+    tags: ["React", "TypeScript", "PostgreSQL", "Supabase", "Tailwind CSS", "Financial Management"],
+    image: "/tontine-app.png",
+    image2: "/tontine-app.png",
+    image3: "/tontine-app.png",
+    date: "Feb 6, 2026",
+    url: "https://tontine-app-inf-221.vercel.app/",
+    code: "https://github.com/DimitriTedom/Systeme-de-Gestion-de-Tontine",
+  },
+  {
+    id: 5,
     title: "AI SnowPrompt builder",
     description:
       "Discover, generate, and share AI‑powered prompts with ai‑suggested tags.",
@@ -116,7 +136,7 @@ export const projectsData = [
     code: "https://github.com/DimitriTedom/Snow-Prompt-Builder",
   },
   {
-    id: 5,
+    id: 6,
     title: "STS Library Design",
     description:
       "A comprehensive UI/UX design project for a modern digital library platform that provides intuitive access to educational resources. This 3-day intensive design sprint focused on creating a visually striking interface with thoughtful animations that enhance user navigation while maintaining accessibility. The project explores the intersection of digital learning and modern web design, incorporating advanced color theory principles to create distinctive visual hierarchies that guide users through complex information architecture.",
@@ -136,7 +156,7 @@ export const projectsData = [
     code: "https://www.figma.com/design/sI4zz3puuDbEFbOiqBBRWG/SnowDev-Tech-Services-Library?node-id=2002-228&p=f&t=Iu7c9f54osYRkeKa-0",
   },
   {
-    id: 6,
+    id: 7,
     title: "MLTI Website",
     description:
       "A front-end MVP website for Master Language & Technology Institute to showcase their services to the website's visitors and enable them to get in touch with the enterprise through the website",
@@ -156,7 +176,7 @@ export const projectsData = [
     code: "https://github.com/DimitriTedom/Master-Language-Technology-Institute",
   },
   {
-    id: 7,
+    id: 8,
     title: "Almost All my Designs",
     description:
       "This project will direct you to a google drive folder containing some product designs i'ved done.",
@@ -173,7 +193,7 @@ export const projectsData = [
     code: "https://drive.google.com/drive/folders/1nxbA6pBJgFooAXlTXaZ1sgeO-tcnZQ1s?usp=sharing",
   },
   {
-    id: 8,
+    id: 9,
     title: "Snow Brain Ai",
     description:
       "This is a ChatBot powered by gemini-1.5-flash of Google, optimized for speed and efficiency with real-time multimodal reasoning capabilities. The application leverages the model's long context window to provide fast, accurate responses while maintaining low latency for seamless user interaction across multiple languages and complex queries.",
@@ -199,7 +219,7 @@ export const projectsData = [
     code: "https://github.com/DimitriTedom/Snow-Brain-Ai",
   },
   {
-    id: 9,
+    id: 10,
     title: " Front-end Portfolio for a Client",
     description:
       "A fully responsive front-end portfolio website developed in React within an extremely tight timeline of just 2 days. This project showcases the client's work, skills, and contact information through a modern, clean interface designed for optimal user experience across all devices. The site features smooth animations, an interactive project gallery, and a functional contact form with email integration.",
@@ -219,7 +239,7 @@ export const projectsData = [
     code: "https://github.com/DimitriTedom/PORTOFOLIO_MR_PAUL",
   },
   {
-    id: 10,
+    id: 11,
     title: "STS HTML/CSS Portfolio",
     description:
       "A fully responsive one-page educational website created as a reference model for students I mentor at WorketYamo. This project demonstrates modern web development practices with NEXT.js technology while emphasizing the importance of understanding and implementing raw CSS without relying on frameworks. The site features clean code organization, semantic HTML structure, and responsive design principles that scale elegantly across all device sizes.",
@@ -239,7 +259,7 @@ export const projectsData = [
     code: "https://github.com/DimitriTedom/SnowDev-Portfolio-Version1",
   },
   {
-    id: 11,
+    id: 12,
     title: "STS_KeyCode App: ASCCI",
     description:
       "A Character to ASCII Converter application developed as an educational tool for students at WorketYamo. This interactive web application allows users to input any keyboard character and instantly see its corresponding ASCII code. The project demonstrates fundamental JavaScript concepts including event handling, character encoding, DOM manipulation, and user input processing while providing a simple but effective user interface for immediate visual feedback.",
@@ -259,7 +279,7 @@ export const projectsData = [
     code: "https://github.com/DimitriTedom/STS_KeyCode_App",
   },
   {
-    id: 12,
+    id: 13,
     title: "STS Password Generator\n",
     description:
       "A fully responsive web application that generates strong, secure passwords based on user-defined parameters. This tool addresses the critical security vulnerability of weak password usage by creating complex combinations of characters that are significantly more resistant to brute force attacks and dictionary-based hacking attempts. Users can customize their password length and select which character types to include (uppercase letters, lowercase letters, numbers, and special symbols), giving them control over the security level while maintaining compatibility with various platform requirements.",
@@ -279,7 +299,7 @@ export const projectsData = [
     code: "https://github.com/DimitriTedom/STS-Password_Generator",
   },
   {
-    id: 13,
+    id: 14,
     title: "🎲 STS Coin Flip 🎰\n",
     description:
       "A fully responsive web application that digitally recreates the classic heads-or-tails coin flip game from childhood. This interactive experience features realistic 3D coin animations that simulate the physics of a flipping coin, complete with appropriate sound effects and visual feedback. Users can make predictions before each flip, keep track of their score, and enjoy a nostalgic gaming experience that works seamlessly across desktop and mobile devices. The application combines playful design elements with smooth animations to capture the simple joy and suspense of this timeless game of chance.",
@@ -299,7 +319,7 @@ export const projectsData = [
     code: "https://github.com/Dimitri-Tedom/STS_CoinFlipApp",
   },
   {
-    id: 14,
+    id: 15,
     title: "STS Tech Stickers Generator App",
     description:
       "A fully responsive web application that generates random tech-themed stickers with vibrant designs and modern typography. Users can generate stickers for various technology names, frameworks, and programming languages with a simple click. Each sticker features unique color combinations, shapes, and styling that represent the tech brand's identity while maintaining a cohesive visual language across the collection.",
