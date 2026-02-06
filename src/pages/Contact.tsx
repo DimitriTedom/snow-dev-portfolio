@@ -88,7 +88,7 @@ const Contact = () => {
                   <Card>
                     <CardContent className="p-6">
                       <h2 className="text-xl font-semibold mb-6 flex items-center gap-2">
-                        <MessageSquare className="h-5 w-5 text-blue-500" />
+                        <MessageSquare className="h-5 w-5 text-orange-500" />
                         Send Me a Message
                       </h2>
                       
@@ -183,7 +183,7 @@ const Contact = () => {
                   <Card className="mb-6">
                     <CardContent className="p-6">
                       <h2 className="text-xl font-semibold mb-6 flex items-center gap-2">
-                        <MapPin className="h-5 w-5 text-green-500" />
+                        <MapPin className="h-5 w-5 text-orange-500" />
                         Contact Info
                       </h2>
                       
@@ -192,7 +192,7 @@ const Contact = () => {
                           <p className="text-sm font-medium">Email Address</p>
                           <a 
                             href="mailto:dimitritedom@gmail.com"
-                            className="text-muted-foreground hover:text-blue-400 transition-colors flex items-center gap-2 mt-1"
+                            className="text-muted-foreground hover:text-orange-400 transition-colors flex items-center gap-2 mt-1"
                           >
                             <Mail className="h-4 w-4" />
                             dimitritedom@gmail.com
@@ -203,7 +203,7 @@ const Contact = () => {
                           <p className="text-sm font-medium">Location</p>
                           <a href={"https://maps.app.goo.gl/cJvQQk71Rt4iWBC2A"}
                           >
-                          <p className="text-muted-foreground hover:text-blue-400 transition-colors flex items-center gap-2 mt-1">
+                          <p className="text-muted-foreground hover:text-orange-400 transition-colors flex items-center gap-2 mt-1">
                             <MapPin className="h-4 w-4" />
                             RFJW+9RJ, Yaoundé
                           </p>
@@ -263,7 +263,7 @@ const Contact = () => {
                       </p>
                       <div className="mt-4 p-2 bg-green-500/20 rounded-full inline-flex items-center gap-2">
                         <span className="h-2 w-2 rounded-full bg-green-500"></span>
-                        <span className="text-xs font-medium text-green-600 dark:text-green-400">
+                        <span className="text-xs font-medium text-orange-600 dark:text-orange-400">
                           Available for Hire
                         </span>
                       </div>

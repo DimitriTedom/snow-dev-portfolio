@@ -24,19 +24,19 @@ const Achievements = () => {
       icon: Star,
       label: "Certifications",
       value: achievementsData.filter(a => a.category?.includes("Development") || a.category?.includes("Design")).length,
-      color: "text-blue-500"
+      color: "text-orange-500"
     },
     {
       icon: Target,
       label: "In Progress",
       value: achievementsData.filter(a => a.title.includes("Progress") || a.date.includes("Target")).length,
-      color: "text-green-500"
+      color: "text-orange-500"
     },
     {
       icon: Award,
       label: "Competitions Won",
       value: achievementsData.filter(a => a.category === "Competition").length,
-      color: "text-purple-500"
+      color: "text-orange-500"
     }
   ];
 

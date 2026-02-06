@@ -47,7 +47,7 @@ const HeroSection = () => {
     },
     {
       text: "UI/UX",
-      className: "text-blue-500 dark:text-blue-400",
+      className: "text-orange-500 dark:text-orange-400",
     },
     {
       text: "Designer",
@@ -58,11 +58,11 @@ const HeroSection = () => {
     },
     {
       text: "AI",
-      className: "text-purple-500 dark:text-purple-400",
+      className: "text-orange-500 dark:text-orange-400",
     },
     {
       text: "Automation",
-      className: "text-purple-500 dark:text-purple-400",
+      className: "text-orange-500 dark:text-orange-400",
     },
     {
       text: "Expert",
@@ -73,11 +73,11 @@ const HeroSection = () => {
     },
     {
       text: "AWS",
-      className: "text-green-500 dark:text-green-400",
+      className: "text-orange-500 dark:text-orange-400",
     },
     {
       text: "Cloud",
-      className: "text-green-500 dark:text-green-400",
+      className: "text-orange-500 dark:text-orange-400",
     },
     {
       text: "Architect",

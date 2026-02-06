@@ -144,7 +144,7 @@ const About = () => {
                 <SlideUp delay={0.1}>
                   <div className="mb-6">
                     <div className="flex items-center gap-2 mb-2">
-                      <UserCircle2 className="h-5 w-5 text-blue-500" />
+                      <UserCircle2 className="h-5 w-5 text-orange-500" />
                       <h2 className="text-xl font-semibold">Who I Am</h2>
                     </div>
                     <p className="text-muted-foreground mb-4">
@@ -172,7 +172,7 @@ const About = () => {
                 <SlideUp delay={0.2}>
                   <div>
                     <div className="flex items-center gap-2 mb-2">
-                      <BookOpen className="h-5 w-5 text-green-500" />
+                      <BookOpen className="h-5 w-5 text-orange-500" />
                       <h2 className="text-xl font-semibold">My Journey</h2>
                     </div>
                     <p className="text-muted-foreground mb-4">
@@ -199,7 +199,7 @@ const About = () => {
             <div className="mb-16">
               <FadeIn className="mb-8">
                 <div className="flex items-center gap-2 mb-2">
-                  <GraduationCap className="h-5 w-5 text-purple-500" />
+                  <GraduationCap className="h-5 w-5 text-orange-500" />
                   <h2 className="text-2xl font-bold">
                     Education & Certifications
                   </h2>

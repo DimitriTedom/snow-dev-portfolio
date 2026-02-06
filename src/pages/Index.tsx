@@ -133,8 +133,8 @@ const Index = () => {
 						<div className="lg:col-span-4">
 							<FadeIn>
 								<div className="flex items-center gap-2 mb-2">
-									<Code className="h-5 w-5 text-blue-500" />
-									<span className="text-sm text-blue-500 font-medium tracking-wider uppercase">Skills & Expertise</span>
+								<Code className="h-5 w-5 text-orange-500" />
+								<span className="text-sm text-orange-500 font-medium tracking-wider uppercase">Skills & Expertise</span>
 								</div>
 								<h2 className="text-2xl md:text-3xl font-bold mb-4">Technical Proficiencies</h2>
 								<p className="text-muted-foreground mb-8 lg:mb-0">
@@ -180,8 +180,8 @@ const Index = () => {
 				<div className="container mx-auto px-4">
 					<FadeIn className="text-center mb-12">
 						<div className="flex items-center gap-2 mb-2 justify-center">
-							<Sparkles className="h-5 w-5 text-purple-500" />
-							<span className="text-sm text-purple-500 font-medium tracking-wider uppercase">Portfolio</span>
+						<Sparkles className="h-5 w-5 text-orange-500" />
+						<span className="text-sm text-orange-500 font-medium tracking-wider uppercase">Portfolio</span>
 						</div>
 						<h2 className="text-2xl md:text-3xl font-bold mb-4">Works & Projects</h2>
 						<p className="text-muted-foreground max-w-2xl mx-auto">
@@ -230,8 +230,8 @@ const Index = () => {
 						<div className="lg:col-span-4">
 							<FadeIn>
 								<div className="flex items-center gap-2 mb-2">
-									<Layers className="h-5 w-5 text-green-500" />
-									<span className="text-sm text-green-500 font-medium tracking-wider uppercase">Essential Stack</span>
+							<Layers className="h-5 w-5 text-orange-500" />
+							<span className="text-sm text-orange-500 font-medium tracking-wider uppercase">Essential Stack</span>
 								</div>
 								<h2 className="text-2xl md:text-3xl font-bold mb-4">My Favorite Tools</h2>
 								<p className="text-muted-foreground mb-8 lg:mb-0">
