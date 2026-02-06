@@ -189,21 +189,26 @@ const HeroSection = () => {
                 transition={{ duration: 0.6 }}
                 className="relative"
               >
-                <div className="relative rounded-3xl overflow-hidden shadow-2xl ring-4 ring-orange-500/20 dark:ring-orange-400/30 bg-gradient-to-br from-orange-50/50 to-purple-50/50 dark:from-orange-950/30 dark:to-purple-950/30 p-4 sm:p-6 md:p-8">
-                  <img
-                    src="/home-img.jpg"
-                    alt="Dimitri Tedom - SnowDev"
-                    className="w-full h-auto object-contain drop-shadow-2xl relative z-0 rounded-2xl"
-                  />
+                <div className="relative w-[280px] h-[280px] sm:w-[320px] sm:h-[320px] md:w-[380px] md:h-[380px] lg:w-[420px] lg:h-[420px] mx-auto">
+                  {/* Circular image container */}
+                  <div className="w-full h-full rounded-full overflow-hidden shadow-2xl ring-4 ring-orange-500/30 dark:ring-orange-400/40 bg-gradient-to-br from-orange-100 to-purple-100 dark:from-orange-950/50 dark:to-purple-950/50 p-1">
+                    <div className="w-full h-full rounded-full overflow-hidden bg-white dark:bg-gray-900">
+                      <img
+                        src="/home-img (Logo).png"
+                        alt="Dimitri Tedom - SnowDev"
+                        className="w-full h-full object-cover object-top scale-110"
+                      />
+                    </div>
+                  </div>
+                  
+                  {/* Purple decorative circle */}
+                  <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[300px] h-[300px] sm:w-[350px] sm:h-[350px] md:w-[450px] md:h-[450px] lg:w-[500px] lg:h-[500px] bg-gradient-to-br from-purple-500/20 to-pink-500/20 rounded-full -z-10 blur-3xl" />
                 </div>
-                
-                {/* Purple decorative circle */}
-                <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[250px] h-[250px] sm:w-[300px] sm:h-[300px] md:w-[400px] md:h-[400px] lg:w-[500px] lg:h-[500px] bg-gradient-to-br from-purple-500/20 to-pink-500/20 rounded-full -z-10 blur-3xl" />
               </motion.div>
 
               {/* Floating Cards */}
               <motion.div
-                className="absolute -top-2 -right-2 sm:-top-4 sm:-right-4 md:top-4 md:right-2 lg:top-8 lg:right-4 bg-white dark:bg-card rounded-2xl p-2 sm:p-3 md:p-4 shadow-xl border border-orange-200/50 dark:border-orange-800/30 max-w-[160px] sm:max-w-[180px] md:max-w-[200px] z-20"
+                className="absolute -top-8 sm:-top-12 md:-top-8 lg:-top-4 -right-8 sm:-right-12 md:-right-16 lg:-right-20 bg-white dark:bg-card rounded-2xl p-2 sm:p-3 md:p-4 shadow-xl border border-orange-200/50 dark:border-orange-800/30 max-w-[160px] sm:max-w-[180px] md:max-w-[200px] z-20"
                 animate={{ y: [0, -10, 0] }}
                 transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
               >
@@ -219,7 +224,7 @@ const HeroSection = () => {
               </motion.div>
 
               <motion.div
-                className="absolute -bottom-6 -left-2 sm:-bottom-8 sm:-left-4 md:bottom-8 md:left-4 lg:bottom-12 lg:left-8 bg-white dark:bg-card rounded-2xl p-2 sm:p-3 md:p-4 shadow-xl border border-blue-200/50 dark:border-blue-800/30 max-w-[160px] sm:max-w-[180px] md:max-w-[200px] z-20"
+                className="absolute -bottom-12 sm:-bottom-16 md:-bottom-12 lg:-bottom-8 -left-8 sm:-left-12 md:-left-16 lg:-left-20 bg-white dark:bg-card rounded-2xl p-2 sm:p-3 md:p-4 shadow-xl border border-blue-200/50 dark:border-blue-800/30 max-w-[160px] sm:max-w-[180px] md:max-w-[200px] z-20"
                 animate={{ y: [0, 10, 0] }}
                 transition={{ duration: 2.5, repeat: Infinity, ease: "easeInOut", delay: 0.5 }}
               >
@@ -235,7 +240,7 @@ const HeroSection = () => {
               </motion.div>
 
               <motion.div
-                className="absolute top-1/4 -left-6 sm:-left-8 md:-left-8 lg:-left-12 bg-white dark:bg-card rounded-2xl p-2 sm:p-3 shadow-xl border border-purple-200/50 dark:border-purple-800/30 max-w-[140px] sm:max-w-[160px] md:max-w-[180px] z-20"
+                className="absolute top-1/4 -left-12 sm:-left-16 md:-left-20 lg:-left-24 bg-white dark:bg-card rounded-2xl p-2 sm:p-3 shadow-xl border border-purple-200/50 dark:border-purple-800/30 max-w-[140px] sm:max-w-[160px] md:max-w-[180px] z-20"
                 animate={{ x: [0, -10, 0] }}
                 transition={{ duration: 3.5, repeat: Infinity, ease: "easeInOut", delay: 0.8 }}
               >
@@ -251,7 +256,7 @@ const HeroSection = () => {
               </motion.div>
 
               <motion.div
-                className="absolute top-1/2 -right-6 sm:-right-8 md:-right-8 lg:-right-12 bg-white dark:bg-card rounded-2xl p-2 sm:p-3 shadow-xl border border-green-200/50 dark:border-green-800/30 z-20"
+                className="absolute top-1/2 -right-12 sm:-right-16 md:-right-20 lg:-right-24 bg-white dark:bg-card rounded-2xl p-2 sm:p-3 shadow-xl border border-green-200/50 dark:border-green-800/30 z-20"
                 animate={{ x: [0, 10, 0] }}
                 transition={{ duration: 3, repeat: Infinity, ease: "easeInOut", delay: 1 }}
               >
