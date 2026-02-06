@@ -189,11 +189,13 @@ const HeroSection = () => {
                 transition={{ duration: 0.6 }}
                 className="relative"
               >
-                <img
-                  src="/home-img.jpg"
-                  alt="Dimitri Tedom - SnowDev"
-                  className="w-full h-auto object-contain drop-shadow-2xl relative z-0"
-                />
+                <div className="relative rounded-3xl overflow-hidden shadow-2xl ring-4 ring-orange-500/20 dark:ring-orange-400/30 bg-gradient-to-br from-orange-50/50 to-purple-50/50 dark:from-orange-950/30 dark:to-purple-950/30 p-4 sm:p-6 md:p-8">
+                  <img
+                    src="/home-img.jpg"
+                    alt="Dimitri Tedom - SnowDev"
+                    className="w-full h-auto object-contain drop-shadow-2xl relative z-0 rounded-2xl"
+                  />
+                </div>
                 
                 {/* Purple decorative circle */}
                 <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[250px] h-[250px] sm:w-[300px] sm:h-[300px] md:w-[400px] md:h-[400px] lg:w-[500px] lg:h-[500px] bg-gradient-to-br from-purple-500/20 to-pink-500/20 rounded-full -z-10 blur-3xl" />

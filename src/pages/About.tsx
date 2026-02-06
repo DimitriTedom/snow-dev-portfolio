@@ -84,9 +84,9 @@ const About = () => {
 
   // Direct download links for CVs
   const developerCvUrl =
-    "https://drive.google.com/file/d/1MzRhQR2Vbtni0Wq4DrzExBhafla_UDNi/view?usp=sharing";
+    "https://drive.google.com/file/d/1VKLkaIRo0OgmNJWsDKsMSo-IzeKrJpoR/view?usp=sharing";
   const designerCvUrl =
-    "https://drive.google.com/file/d/1sxbLP6g6KNNlgQ-uIAXa4ouvHWP2g_iC/view?usp=sharing";
+    "https://drive.google.com/file/d/1cxFCuuajKgcoxVgIIJjx3lkXfA9Q9wlE/view?usp=sharing";
 
   // Convert Google Drive view links to direct download links
   const getDirectDownloadLink = (driveLink: string) => {
