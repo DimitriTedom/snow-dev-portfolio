@@ -1,4 +1,5 @@
-import Layout from "@/components/layout";
+"use client";
+
 import {
   FadeIn,
   SlideUp,
@@ -10,7 +11,7 @@ import { Button } from "@/components/ui/button";
 import { ButtonColorful } from "@/components/ui/button-colorful";
 import { AchievementCard } from "@/components/ui/achievement-card";
 import { achievementsData } from "@/data/achievements";
-import { Link } from "react-router-dom";
+import Link from "next/link";
 import {
   ArrowDown,
   Award,
@@ -20,11 +21,9 @@ import {
   Trophy,
   UserCircle2,
 } from "lucide-react";
-import { motion } from "framer-motion";
 import { Separator } from "@/components/ui/separator";
 
 const About = () => {
-  // Data for education and certifications
   const education = [
     {
       degree:
@@ -82,20 +81,18 @@ const About = () => {
     },
   ];
 
-  // Direct download links for CVs
   const developerCvUrl =
     "https://drive.google.com/file/d/1JiLakJX0A56nRsTYU4J06cLhfOLp2TLq/view?usp=sharing";
   const designerCvUrl =
     "https://drive.google.com/file/d/1cxFCuuajKgcoxVgIIJjx3lkXfA9Q9wlE/view?usp=sharing";
 
-  // Convert Google Drive view links to direct download links
   const getDirectDownloadLink = (driveLink: string) => {
     const fileId = driveLink.split("/d/")[1].split("/view")[0];
     return `https://drive.google.com/uc?export=download&id=${fileId}`;
   };
 
   return (
-    <Layout>
+    <>
       <section className="pt-32 pb-20">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
@@ -195,7 +192,6 @@ const About = () => {
 
             <Separator className="my-12" />
 
-            {/* Education & Certifications */}
             <div className="mb-16">
               <FadeIn className="mb-8">
                 <div className="flex items-center gap-2 mb-2">
@@ -264,7 +260,7 @@ const About = () => {
                         Recent Achievements
                       </h3>
                       <Button variant="outline" size="sm" asChild>
-                        <a href="/achievements">View All</a>
+                        <Link href="/achievements">View All</Link>
                       </Button>
                     </div>
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -282,7 +278,6 @@ const About = () => {
               </div>
             </div>
 
-            {/* CTA */}
             <div className="bg-muted p-8 rounded-lg text-center">
               <SlideUp>
                 <h3 className="text-2xl font-bold mb-4">
@@ -298,14 +293,14 @@ const About = () => {
                   className="h-12 px-8"
                   asChild
                 >
-                  <Link to="/contact">Contact Me</Link>
+                  <Link href="/contact">Contact Me</Link>
                 </ButtonColorful>
               </SlideUp>
             </div>
           </div>
         </div>
       </section>
-    </Layout>
+    </>
   );
 };
 

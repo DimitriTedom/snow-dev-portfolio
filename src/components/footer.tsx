@@ -1,5 +1,7 @@
 
-import { Link } from "react-router-dom";
+"use client";
+
+import Link from "next/link";
 import { Linkedin, Twitter, Send, Github } from "lucide-react";
 
 const Footer = () => {
@@ -8,7 +10,7 @@ const Footer = () => {
       <div className="container mx-auto px-4 md:px-6">
         <div className="flex flex-col md:flex-row items-center justify-between">
           <div className="flex flex-col items-center md:items-start mb-4 md:mb-0">
-            <Link to="/" className="font-semibold text-lg mb-2">
+            <Link href="/" className="font-semibold text-lg mb-2">
               SnowDev
             </Link>
             <p className="text-muted-foreground text-sm text-center md:text-left">

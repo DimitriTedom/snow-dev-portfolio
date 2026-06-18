@@ -1,8 +1,10 @@
+"use client";
+
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { ButtonColorful } from "@/components/ui/button-colorful";
 import { TypewriterEffectSmooth } from "@/components/ui/typewriter-effect";
-import { Link } from "react-router-dom";
+import Link from "next/link";
 import { Badge } from "@/components/ui/badge";
 import { Github, Linkedin, Twitter, Globe, Play } from "lucide-react";
 
@@ -163,7 +165,7 @@ const HeroSection = () => {
                 className="px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg rounded-full shadow-lg hover:shadow-xl h-12 sm:h-14 w-full sm:w-auto"
                 asChild
               >
-                <Link to="/projects">Get Started</Link>
+                <Link href="/projects">Get Started</Link>
               </ButtonColorful>
               <Button
                 size="lg"
@@ -171,7 +173,7 @@ const HeroSection = () => {
                 className="px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg rounded-full border-2 hover:bg-secondary h-12 sm:h-14 flex items-center justify-center gap-2 w-full sm:w-auto"
                 asChild
               >
-                <Link to="/about">
+                <Link href="/about">
                   <Play className="w-4 h-4" />
                   Watch Demo
                 </Link>
